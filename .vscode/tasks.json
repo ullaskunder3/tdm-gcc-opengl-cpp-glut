@@ -7,6 +7,7 @@
             "command": "g++",
             "args": [
                 "${file}",
+                "C:/TDM-GCC-64/lib/glad.c",
                 "-IC:/TDM-GCC-64/include",
                 "-LC:/TDM-GCC-64/lib",
                 "-lfreeglut",
@@ -28,9 +29,9 @@
             "group": "test",
             "presentation": {
                 "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "new"
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
             }
         },
         {
@@ -42,7 +43,13 @@
             "dependsOrder": "sequence",
             "problemMatcher": [
                 "$gcc"
-            ]
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "focus": false,
+                "panel": "new"
+            }
         }
     ]
 }
