@@ -19,8 +19,8 @@ This guide will help you set up a modern, portable C++ OpenGL development enviro
 
 ## 📸 Preview
 
-| Screenshot | Demo |
-|------------|------|
+| Screenshot                                                                                                       | Demo                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | ![Screenshot 2025-05-18 202433](https://github.com/user-attachments/assets/766bc417-3882-49b2-bbe2-3b3a3210b152) | ![opengl-demo](https://github.com/user-attachments/assets/e256b931-8033-4df9-84ea-64b98cf27d9a) |
 
 ---
@@ -221,3 +221,5 @@ If you see a window pop up, your setup is working!
 
 **Happy Coding!**  
 If you run into any issues, double-check your paths and library files, or ask for help!
+
+- I added GLFW aslo similar way include to include, lib to lib, and dll to bin

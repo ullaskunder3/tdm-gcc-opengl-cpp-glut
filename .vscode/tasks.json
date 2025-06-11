@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Active C++ File (FreeGLUT)",
+            "label": "Build Active C++ File",
             "type": "shell",
             "command": "g++",
             "args": [
@@ -11,8 +11,11 @@
                 "-IC:/TDM-GCC-64/include",
                 "-LC:/TDM-GCC-64/lib",
                 "-lfreeglut",
+                "-lglfw3",
                 "-lopengl32",
                 "-lglu32",
+                "-lgdi32",
+                "-luser32",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}.exe"
             ],
@@ -25,7 +28,7 @@
             "label": "Run Executable",
             "type": "shell",
             "command": "${workspaceFolder}/build/${fileBasenameNoExtension}.exe",
-            "dependsOn": "Build Active C++ File (FreeGLUT)",
+            "dependsOn": "Build Active C++ File",
             "group": "test",
             "presentation": {
                 "echo": true,
@@ -37,7 +40,7 @@
         {
             "label": "Build and Run",
             "dependsOn": [
-                "Build Active C++ File (FreeGLUT)",
+                "Build Active C++ File",
                 "Run Executable"
             ],
             "dependsOrder": "sequence",
